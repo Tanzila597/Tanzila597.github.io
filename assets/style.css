@@ -300,3 +300,32 @@ mark{background:none;color:var(--accent);font-weight:700}
   .corner.br{bottom:-22px;right:-22px}
 }
 .vert-label{transform:translateY(-50%);writing-mode:vertical-rl;right:-58px}
+
+/* ABOUT FACTS */
+.facts{align-self:stretch}
+.facts-list{padding:10px 22px 18px}
+.facts-list>div{padding:14px 0;border-bottom:1px dashed var(--line)}
+.facts-list>div:last-child{border-bottom:0}
+.facts-list dt{font-family:var(--mono);font-size:12px;color:var(--accent);margin-bottom:4px}
+.facts-list dd{font-size:16px;color:var(--text)}
+.facts-list dd.ok{display:flex;align-items:center;gap:10px;color:var(--green);font-family:var(--mono);font-size:14px}
+.facts-list .pulse{background:var(--green);box-shadow:none}
+
+/* CONTACT */
+.contact-grid{grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center}
+.contact-photo{position:relative;max-width:400px}
+.contact-main .lead{color:var(--muted);margin-bottom:30px;max-width:520px}
+.contact-links{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact-links a{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card);
+  transition:border-color .25s,transform .25s,background .25s;min-width:0}
+.contact-links a:hover{border-color:var(--accent);transform:translateY(-3px);background:#18181f}
+.contact-links .ci{flex:0 0 40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.contact-links svg{width:20px;height:20px}
+.contact-links span:nth-child(2){display:flex;flex-direction:column;min-width:0;font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.contact-links small{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.contact-links b{margin-left:auto;color:var(--muted);font-weight:400;transition:color .25s,transform .25s}
+.contact-links a:hover b{color:var(--accent);transform:translateX(3px)}
+.contact-loc{margin-top:22px}
+@media (max-width:960px){.contact-grid{grid-template-columns:1fr;gap:56px}.contact-photo{max-width:340px;margin:0 auto}}
+@media (max-width:760px){.contact-links{grid-template-columns:1fr}.contact-photo{max-width:280px}}
+.contact-photo .portrait-img img{filter:none}
