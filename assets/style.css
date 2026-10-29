@@ -331,3 +331,34 @@ mark{background:none;color:var(--accent);font-weight:700}
 .contact-photo .portrait-img img{filter:none}
 .logo{font-family:var(--sans);font-weight:700;font-size:20px;letter-spacing:-.02em}
 .logo-dot{color:var(--accent)}
+
+/* RESUME COPY ADDITIONS */
+.lead-2{margin-top:18px;color:var(--muted);font-size:clamp(16px,1.35vw,18px)}
+.callout p strong{color:var(--text);font-weight:600}
+.dd-sub{display:block;margin-top:4px;font-size:13.5px;color:var(--muted)}
+.case-meta{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:6px}
+.checks li strong{color:var(--text);font-weight:600}
+.impact-grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.earlier{margin-top:20px;padding:34px 40px;border:1px solid var(--line);border-radius:16px;background:rgba(20,20,28,.5)}
+.earlier .mono-label{margin-bottom:18px}
+.timeline li{display:grid;grid-template-columns:130px 1fr;gap:24px;padding:20px 0;border-top:1px dashed var(--line)}
+.timeline li:first-child{border-top:0;padding-top:4px}
+.tl-date{font-family:var(--mono);font-size:13px;color:var(--accent);padding-top:3px}
+.timeline h4{font-size:18px;font-weight:600;margin-bottom:6px}
+.timeline p{color:#c9c7c1;font-size:15.5px}
+.skill-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill-group{padding:26px 26px 24px;border:1px solid var(--line);border-radius:12px;background:var(--card);transition:border-color .25s,transform .25s}
+.skill-group:hover{border-color:var(--accent);transform:translateY(-3px)}
+.skill-group:last-child{grid-column:1/-1}
+.skill-group h4{font-size:19px;font-weight:600;margin:6px 0 10px}
+.skill-group p{color:var(--muted);font-size:15px;line-height:1.7}
+.tools{margin-top:36px}
+.tools .mono-label{margin-bottom:14px}
+.tool-chips{display:flex;flex-wrap:wrap;gap:10px}
+.tool-chips li{font-family:var(--mono);font-size:13px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;color:var(--text);background:rgba(20,20,28,.6);transition:border-color .2s,color .2s}
+.tool-chips li:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:760px){
+  .earlier{padding:24px 20px}
+  .timeline li{grid-template-columns:1fr;gap:6px}
+  .skill-groups{grid-template-columns:1fr}
+}

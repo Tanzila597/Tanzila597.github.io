@@ -30,7 +30,7 @@
   }
 
   // Typing effect
-  var words = ['Conference marketing', 'Social media & content', 'Community communications', 'Impact reporting', 'Event coordination'];
+  var words = ['Conference & event planning', 'First Nations community engagement', 'Social media & content strategy', 'Stakeholder communications', 'Post-event reporting'];
   var el = document.getElementById('typed');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (el && !reduce) {
