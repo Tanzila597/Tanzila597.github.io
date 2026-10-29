@@ -215,3 +215,5 @@ mark{background:none;color:var(--accent);font-weight:700}
 }
 .hero-inner>*,.about-grid>*,.case-body>*,.reports-grid>*,.contact-grid>*{min-width:0}
 .hero>.container{width:100%}
+.about-grid .photo img{filter:none}
+.footer a:hover{color:var(--accent)}
