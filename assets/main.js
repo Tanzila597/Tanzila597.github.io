@@ -71,3 +71,13 @@
     box.addEventListener('click', function () { go(i + 1); });
   });
 })();
+
+// Resume download feedback
+document.querySelectorAll('.dl-btn').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var l = b.querySelector('.dl-label'); if (!l) return;
+    l.textContent = 'Downloading…';
+    setTimeout(function () { l.textContent = 'Saved ✓'; b.classList.add('done'); }, 900);
+    setTimeout(function () { l.textContent = 'Download resume'; b.classList.remove('done'); }, 4000);
+  });
+});

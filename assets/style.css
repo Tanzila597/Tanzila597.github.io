@@ -362,3 +362,28 @@ mark{background:none;color:var(--accent);font-weight:700}
   .timeline li{grid-template-columns:1fr;gap:6px}
   .skill-groups{grid-template-columns:1fr}
 }
+
+/* RESUME */
+.nav-resume{border:1px solid var(--accent);color:var(--accent)!important;padding:7px 14px;border-radius:999px;transition:background .2s,color .2s}
+.nav-resume:hover{background:var(--accent);color:#fff!important}
+.resume-band{padding-top:40px}
+.resume-card{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center;padding:56px;border:1px solid var(--line);border-radius:20px;
+  background:radial-gradient(ellipse at 20% 50%,rgba(232,38,26,.14),transparent 60%),var(--card)}
+.resume-paper{position:relative;display:block;max-width:330px;margin:0 auto;aspect-ratio:935/1210}
+.paper{position:absolute;inset:0;border-radius:6px;background:#fff;box-shadow:0 30px 60px -20px rgba(0,0,0,.8);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.paper.back{transform:rotate(-7deg) translate(-14px,10px);background:#e9e6df}
+.paper.front{transform:rotate(3deg);overflow:hidden}
+.paper.front img{width:100%;height:100%;object-fit:cover;object-position:top}
+.resume-paper:hover .paper.front{transform:rotate(0) translateY(-10px) scale(1.03)}
+.resume-paper:hover .paper.back{transform:rotate(-10deg) translate(-26px,14px)}
+.paper-tag{position:absolute;z-index:2;right:-14px;top:22px;font-family:var(--mono);font-size:11.5px;color:#fff;background:var(--accent);padding:6px 10px;border-radius:4px;transform:rotate(6deg);box-shadow:0 8px 20px -6px rgba(232,38,26,.6)}
+.resume-copy h3{font-size:clamp(32px,4vw,52px);letter-spacing:-.03em;line-height:1.05;margin:8px 0 16px}
+.resume-copy .lead{color:var(--muted);max-width:520px}
+.term-line{font-family:var(--mono);font-size:14px;margin:22px 0 4px;color:var(--text)}
+.term-line .prompt{color:var(--accent);margin-right:8px}
+.resume-copy .cta-row{margin-top:22px}
+.resume-meta{margin-top:18px}
+.dl-btn.done{background:#1f9d55}
+@media (max-width:960px){.resume-card{grid-template-columns:1fr;gap:48px;padding:40px 28px}.resume-paper{max-width:260px}}
+@media (max-width:760px){.resume-card{padding:32px 20px}.resume-paper{max-width:220px}.paper-tag{right:-8px}.nav-resume{display:inline-block}}
+.resume-paper{width:100%}
