@@ -245,3 +245,17 @@ mark{background:none;color:var(--accent);font-weight:700}
   .logo-tile:hover::after{transform:none}
 }
 @media (max-width:760px){.logo-tile{width:160px;height:96px;padding:12px 16px}.logo-tile img{max-height:66px}}
+
+/* WORK PHOTOS */
+.photo figcaption{position:absolute;z-index:2;left:12px;bottom:12px;font-family:var(--mono);font-size:11.5px;color:#fff;background:rgba(10,10,15,.78);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:6px 10px;border-radius:6px;border-left:2px solid var(--accent)}
+.photo.tall{aspect-ratio:3/4;max-height:560px}
+.photo.tall img{object-position:50% 25%}
+.photo.pos-low img{object-position:50% 72%}
+.photo-stack{position:relative;padding-bottom:56px}
+.polaroid{position:absolute;right:-14px;bottom:0;width:38%;background:#F4F2EE;padding:8px 8px 30px;border-radius:4px;transform:rotate(4deg);
+  box-shadow:0 20px 40px -12px rgba(0,0,0,.7);z-index:3;transition:transform .4s}
+.polaroid:hover{transform:rotate(0) scale(1.05)}
+.polaroid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:7px;text-align:center;font-family:var(--serif);font-style:italic;font-size:15px;color:#0A0A0F}
+@media (max-width:760px){.polaroid{right:-4px;width:42%}.photo.tall{max-height:480px}}
