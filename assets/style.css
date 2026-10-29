@@ -329,3 +329,5 @@ mark{background:none;color:var(--accent);font-weight:700}
 @media (max-width:960px){.contact-grid{grid-template-columns:1fr;gap:56px}.contact-photo{max-width:340px;margin:0 auto}}
 @media (max-width:760px){.contact-links{grid-template-columns:1fr}.contact-photo{max-width:280px}}
 .contact-photo .portrait-img img{filter:none}
+.logo{font-family:var(--sans);font-weight:700;font-size:20px;letter-spacing:-.02em}
+.logo-dot{color:var(--accent)}
