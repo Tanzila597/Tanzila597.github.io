@@ -259,3 +259,14 @@ mark{background:none;color:var(--accent);font-weight:700}
 .polaroid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px}
 .polaroid figcaption{position:absolute;left:0;right:0;bottom:7px;text-align:center;font-family:var(--serif);font-style:italic;font-size:15px;color:#0A0A0F}
 @media (max-width:760px){.polaroid{right:-4px;width:42%}.photo.tall{max-height:480px}}
+
+/* SLIDESHOW */
+.photo.slides .slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease}
+.photo.slides .slide.is-active{opacity:1;z-index:1}
+.photo.slides .slide img{position:absolute;inset:0}
+.slide-dots{position:absolute;z-index:3;right:12px;bottom:14px;display:flex;gap:6px}
+.slide-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4);transition:background .3s,width .3s}
+.slide-dots i.on{background:var(--accent);width:18px;border-radius:4px}
+.polaroid img{object-position:50% 70%}
+.slide-dots{top:14px;bottom:auto}
+.photo-stack .photo figcaption{max-width:58%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
