@@ -390,3 +390,10 @@ mark{background:none;color:var(--accent);font-weight:700}
 .photo.tall{aspect-ratio:609/1000;max-height:none;max-width:420px;width:100%;justify-self:center}
 .photo.tall img{object-fit:contain;object-position:center}
 @media (max-width:760px){.photo.tall{max-width:320px;max-height:none}}
+
+/* SUB-PROJECT under TAG */
+.case:has(+ .case-sub){margin-bottom:18px}
+.case-sub{position:relative;margin-left:64px;border-left:2px solid var(--accent)}
+.case-sub::before{content:"";position:absolute;left:-66px;top:-20px;width:32px;height:62px;border-left:2px dashed rgba(232,38,26,.5);border-bottom:2px dashed rgba(232,38,26,.5);border-bottom-left-radius:10px}
+.case-sub .case-index{background:var(--accent-soft)}
+@media (max-width:760px){.case-sub{margin-left:18px}.case-sub::before{left:-20px;width:16px}}
