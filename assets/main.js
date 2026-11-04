@@ -81,3 +81,25 @@ document.querySelectorAll('.dl-btn').forEach(function (b) {
     setTimeout(function () { l.textContent = 'Download resume'; b.classList.remove('done'); }, 4000);
   });
 });
+
+// Project spotlight tabs
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.pj-tab'));
+  if (!tabs.length) return;
+  function show(t, focus) {
+    tabs.forEach(function (x) {
+      var on = x === t, p = document.getElementById(x.getAttribute('aria-controls'));
+      x.classList.toggle('is-on', on); x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1;
+      p.hidden = !on; p.classList.toggle('is-on', on);
+    });
+    if (focus) t.focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { show(t); });
+    t.addEventListener('keydown', function (e) {
+      var n = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : null;
+      if (n === null) return;
+      e.preventDefault(); show(tabs[(n + tabs.length) % tabs.length], true);
+    });
+  });
+})();
