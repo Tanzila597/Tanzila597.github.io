@@ -543,3 +543,12 @@ mark{background:none;color:var(--accent);font-weight:700}
 @media (max-width:760px){.pjf-logo-wide{width:110px!important;height:62px!important;padding:5px 8px!important}}
 .pjf-logo-fnhc{width:76px!important;height:94px!important;padding:6px!important;transform:none!important}
 @media (max-width:760px){.pjf-logo-fnhc{width:60px!important;height:74px!important;padding:5px!important}}
+/* smaller project logos */
+.pjf-logo-fnhc{width:60px!important;height:74px!important;padding:5px!important}
+.pjf-logo-wide{width:118px!important;height:68px!important;padding:6px 8px!important}
+#pj-p3 .pj-logo{width:66px;height:66px;padding:6px;transform:none}
+@media (max-width:760px){
+  .pjf-logo-fnhc{width:48px!important;height:60px!important;padding:4px!important}
+  .pjf-logo-wide{width:92px!important;height:53px!important;padding:4px 6px!important}
+  #pj-p3 .pj-logo{width:52px;height:52px;padding:5px}
+}
