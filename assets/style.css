@@ -559,3 +559,7 @@ mark{background:none;color:var(--accent);font-weight:700}
 .pjf-brand{display:inline-flex;align-items:center;height:52px;padding:6px 10px;margin-bottom:16px;background:#fff;border-radius:8px}
 .pjf-brand img{height:100%;width:auto;max-width:140px;object-fit:contain}
 @media (max-width:760px){.pjf-brand{height:44px;padding:5px 8px}}
+/* logo under main photo */
+.pjf-visual .pjf-brand{position:absolute;left:0;bottom:0;margin:0;z-index:2}
+.pjf-visual{padding-bottom:72px}
+@media (max-width:760px){.pjf-visual{padding-bottom:60px}}
