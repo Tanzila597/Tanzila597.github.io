@@ -566,3 +566,6 @@ mark{background:none;color:var(--accent);font-weight:700}
 /* casabella */
 .casa-main{aspect-ratio:1/1;max-width:460px}
 .casa-brand{background:#a87637!important;padding:4px 8px!important}
+.casa-pol{width:44%}
+.casa-pol img{aspect-ratio:785/806;object-position:center}
+.casa-main{max-width:420px}
