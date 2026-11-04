@@ -552,3 +552,10 @@ mark{background:none;color:var(--accent);font-weight:700}
   .pjf-logo-wide{width:92px!important;height:53px!important;padding:4px 6px!important}
   #pj-p3 .pj-logo{width:52px;height:52px;padding:5px}
 }
+/* clean photos + separate logo */
+.pjf-visual{padding-bottom:56px}
+.pjf-polaroid{padding:8px}
+.pjf-polaroid img{display:block}
+.pjf-brand{display:inline-flex;align-items:center;height:52px;padding:6px 10px;margin-bottom:16px;background:#fff;border-radius:8px}
+.pjf-brand img{height:100%;width:auto;max-width:140px;object-fit:contain}
+@media (max-width:760px){.pjf-brand{height:44px;padding:5px 8px}}
