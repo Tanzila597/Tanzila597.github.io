@@ -563,3 +563,6 @@ mark{background:none;color:var(--accent);font-weight:700}
 .pjf-visual .pjf-brand{position:absolute;left:0;bottom:0;margin:0;z-index:2}
 .pjf-visual{padding-bottom:72px}
 @media (max-width:760px){.pjf-visual{padding-bottom:60px}}
+/* casabella */
+.casa-main{aspect-ratio:1/1;max-width:460px}
+.casa-brand{background:#a87637!important;padding:4px 8px!important}
