@@ -523,3 +523,6 @@ mark{background:none;color:var(--accent);font-weight:700}
   .pjf-visual .pj-stamp{right:-6px}
 }
 .pjf-actions li:last-child{grid-column:span 2}
+.pjf-actions.n8 li:last-child{grid-column:auto}
+.pjf-logo-wide{width:230px!important;height:86px!important;padding:8px 12px!important;transform:rotate(-4deg)}
+@media (max-width:760px){.pjf-logo-wide{width:124px!important;height:50px!important}}
