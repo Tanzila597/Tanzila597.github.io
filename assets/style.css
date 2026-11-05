@@ -569,3 +569,4 @@ mark{background:none;color:var(--accent);font-weight:700}
 .casa-pol{width:44%}
 .casa-pol img{aspect-ratio:785/806;object-position:center}
 .casa-main{max-width:420px}
+.timeline li{grid-template-columns:1fr}
