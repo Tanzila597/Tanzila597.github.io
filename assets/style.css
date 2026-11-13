@@ -570,3 +570,5 @@ mark{background:none;color:var(--accent);font-weight:700}
 .casa-pol img{aspect-ratio:785/806;object-position:center}
 .casa-main{max-width:420px}
 .timeline li{grid-template-columns:1fr}
+.lede-hook{display:block;color:var(--text);font-weight:600;margin-bottom:8px}
+.hero-lede em{font-size:1.08em}
