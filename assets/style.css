@@ -572,3 +572,6 @@ mark{background:none;color:var(--accent);font-weight:700}
 .timeline li{grid-template-columns:1fr}
 .lede-hook{display:block;color:var(--text);font-weight:600;margin-bottom:8px}
 .hero-lede em{font-size:1.08em}
+.about-p{color:var(--muted);font-size:17px;line-height:1.7;margin-top:16px}
+.about-p strong{color:var(--text);font-size:19px}
+#about .tagline{margin-top:-8px;margin-bottom:36px}
